@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Creada por jocsanex5-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DADA</title>
+    <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilosDaDa.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <span id="time"></span>
+
+            <nav>
+                <ul>
+                    <li><a href="#"class="ayuda" id="ayuda">Ayuda</a></li>
+
+                    <li><a href="#" class="que_es" id="que_es">Que es DADA?</a></li>
+
+                    <li><a href="#" class="autor" id="autor">Autor</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <img src="recursos/logo.png" width="300px" class="logo">
+
+        <div class="datos">
+
+                <input type="text" name="dia" id="dia" placeholder="Dia"> 
+                
+                    <span class="guion">/</span>
+
+                <input type="text" name="mes" id="mes" placeholder="Mes"> 
+
+                    <span class="guion">/</span>
+
+                <input type="text" name="a" id="a" placeholder="Año"> 
+            </ul>
+
+            <button class="btn" id="conv"><span id="valor"><img src="recursos/lupa.png" width="15px"></span></button>
+
+        </div>
+
+        <div class="mostrar">
+
+            <h2>Dia actual: </h2>
+
+            <div><span id="dadaLogo"></span></div>
+            
+            <div class="DIA"><span id="diaActual"></span></div>
+
+        </div>
+
+        <div class="most_cont_fecha">
+            <span id="title_fecha" class="title_fecha"></span>
+                <br>
+            <span id="cont_fecha" class="cont_fecha"></span>
+        </div>
+    </div>
+
+    <div id="ayu_qE_A" class="ayu_qE_A_no_visible">
+
+        <button id="no_visible" class="btnNoVisible">X</button>
+
+        <div id="img" class="_img"></div>
+
+        <div id="title" class="_title"></div>
+
+        <div id="content" class="_content"></div>
+    </div>
+
+    <footer>
+        Derechos Reservados &copy; By Jocsanex5
+    </footer>
+
+    <script src="mainDADA.js"></script>
+</body>
+</html>

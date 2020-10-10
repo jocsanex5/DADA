@@ -1,0 +1,448 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+    --shadowLg: #fff;
+    --shadow: rgb(112, 100, 100);
+}
+
+body{
+    text-align: center;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+header{
+    background: rgba(67, 95, 157, 0.96);
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    background: rgb(209, 95, 125);
+    transition: all 0.5s;
+    font-size: 22px;
+    padding: 12px;
+}
+
+nav ul li .ayuda{
+    animation-name: menu;
+    animation-duration: 1s;
+}
+
+nav ul li .que_es{
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+nav ul li .autor{
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+header #time{
+    float: right;
+    background: none;
+    margin: 15px;
+    position: relative;
+    right: 10px;
+    
+    color: #fff;
+    font-family: cursive;
+}
+
+@keyframes menu{
+
+    0%{ padding: 15px; font-size: 18px; }
+
+    50%{ 
+        background: rgb(209, 95, 125);
+        transition: all 0.5s;
+        font-size: 22px;
+        padding: 12px; 
+    }
+
+    100%{ padding: 15px; font-size: 18px;  }
+}
+
+.logo{
+    margin: 20px;
+    border-radius: 40px;
+    padding: 10px;
+    position: static;
+
+    box-shadow: 3px 3px 3px 3px rgb(34, 65, 112);
+
+    animation-name: sombra;
+    animation-duration: 1s;
+    transition: all 0.5s;
+}
+
+@keyframes sombra{
+    0% { 
+        width: 250px; 
+        margin: 70px;
+
+        
+    }
+
+    100% { 
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+.datos{
+    clear: both;
+    background: rgb(209, 95, 125);
+    width: 94%;
+    margin: 20px;
+    padding: 20px;
+
+    border: 2px solid #000;
+    border-radius: 20px;
+
+    text-align: center;
+
+    animation-name: datos;
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+@keyframes datos{
+    0% { 
+        margin: 30px 20px;
+    }
+
+    100% { 
+        margin: 20px;
+    }
+}
+
+ul li{
+    list-style: none;
+    
+}
+
+input, [type = text]{
+    width: 50px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+
+    font-size: 16px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.guion{
+    font-size: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    background: #fff;
+    border: 2px solid rgb(146, 138, 138);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: all 1s;
+    animation-name: btn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+/*BTN en loading*/
+.btnCarga{
+    background: #fff;
+    border: 2px solid rgb(94, 88, 88);
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 5px;
+
+    transition: all 1s;
+
+    color: rgb(232, 232, 232);
+}
+
+@keyframes btn{
+    0%{ transform: rotate(0deg); }
+
+    100%{ transform: rotate(360deg); }
+}
+
+.mostar h2{
+    margin: 10px;
+}
+
+/* Validacion de los input */
+.error{
+    color: red;
+    border: 2px solid red;
+}
+
+/* DIA ACTUAL DIv */
+.mostrar{
+    width: 40%;
+    background: #000;
+    margin: 10px 28%;
+    padding: 40px 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgb(141, 134, 134);
+
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation-name: mostrar;
+    animation-duration: 1s;
+    transition: all 2s;
+}
+
+@keyframes mostrar{
+    0%{
+        width: 10%;
+    }
+
+    100%{
+        width: 40%;
+    }
+}
+
+.DIA{
+    background: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+    position: relative;
+    top: 8px;
+}
+
+    .diaActual{
+        background: none;
+        position: relative;
+        top: 8px;
+
+            transition: all 1s;
+            animation: dia 0.5s;
+    }
+
+    @keyframes dia{
+
+        0%{ font-size: 0; }
+        100%{ font-size: 30px; }
+    }
+
+/*---------Contenido de fecha---------*/
+.most_cont_fecha{
+    background-color: rgba(243, 247, 255, 0.96);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 10%;
+
+        animation: 1s m_c_f;
+}
+
+    @keyframes m_c_f{
+        0%{ margin: 20px 50%; }
+        100%{ margin: 20px 10%; }
+    }
+
+.title_fecha{
+    font-size: 22px;
+    font-weight: bold;
+    background-color: none;
+    display: block;
+    margin: 5px;
+
+    font-family: cursive;
+}
+
+    .title_fecha_animation{
+        font-size: 22px;
+        font-weight: bold;
+        background-color: none;
+        display: block;
+        margin: 5px;
+
+        font-family: cursive;
+
+            transition: all 1s;
+            animation: t_f_a 0.5s;
+    }
+
+    @keyframes t_f_a{
+        0%{ font-size: 0; }
+        100%{ font-size: 22px; }
+    }
+
+.cont_fecha{
+    display: block;
+    margin: 5px;
+
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .cont_fecha_animation{
+        display: block;
+        margin: 5px;
+
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+
+            animation: c_f_a;
+    }
+
+    @keyframes c_f_a{
+        0%{ font-size: 0px; }
+        100%{ font-size: 18px; }
+    }
+
+/*------ayu_qE_A--------*/
+.ayu_qE_A_no_visible{
+    margin: 0;
+    visibility: hidden;
+}
+
+.ayu_qE_A_visible{
+    background: rgba(243, 247, 255, 0.96);
+    position: fixed;
+    width: 30%;
+    padding: 10px;
+    align-items: center;
+    right: 5%;
+    top: 60px;
+    border-radius: 20px;
+    transition: all 1s;
+
+    visibility: visible;
+}
+
+    .btnNoVisible{
+        background: none;
+        padding: 5px;
+        float: left;
+        border-radius: 10px;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+._title{
+    margin: 5px;
+    
+    font-size: 20px;
+    font-style: oblique;
+    font-family: cursive;
+}
+
+._content{
+    margin: 5px;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    margin: 50px;
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    ---Dispositivos moviles
+*/
+
+@media screen and ( max-width: 800px ){
+
+    .wrapper{
+        width: 120%;
+        margin: auto;
+        padding: auto;
+        background: none;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .logo{
+        width: 60%;
+        margin: 20px 15%;
+
+        animation-name: sombra;
+        animation-duration: 1s;
+        transition: all 0.5s;
+    }
+
+        @keyframes sombra{
+            0% { 
+                width: 70%; 
+            }
+
+            100% { 
+                width: 60%;
+            }
+        }
+
+    .datos{
+        margin: auto;
+        width: 80%;
+        margin: 15px 6%;
+
+        animation: datos 1s;
+    }
+
+    @keyframes datos{
+        0% { 
+            margin: 40px 6%;
+        }
+    
+        100% { 
+            margin: 15px 6%;
+        }
+    }
+
+    input, [type = text]{
+        width: 70px;
+    }
+
+
+
+    .ayu_qE_A_visible{
+        width: 50%;
+    }
+
+    footer{
+        width: 100%;
+    }
+} 
